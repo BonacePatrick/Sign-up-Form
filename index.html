@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Sign-up Form</title>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <!-- Left image -->
+      <div class="left-img">
+        <div class="logo-contents">
+          <img src="./aseets/odin-lined.png" alt="" class="logo" />
+          <h2 class="logo-text">ODIN</h2>
+        </div>
+      </div>
+
+      <div class="right-form-side">
+        <!-- Form section -->
+        <div class="intro-contents">
+          <p class="intro-content">
+            This is not real online services! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started
+            <br />
+          </p>
+          <span class="intro-cta">You <em>know</em> you want to.</span>
+        </div>
+
+        <div class="form-contents">
+          <div class="form-contents">
+            <form class="form" novalidate>
+              <div class="form-fields">
+                <p class="form-paragraph">Let's do this!</p>
+                <div class="names flex">
+                  <div class="first-names flex-col">
+                    <label class="form-label"> FIRST NAME </label>
+                    <input
+                      type="text"
+                      placeholder="First name"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+
+                  <div class="last-names flex-col">
+                    <label class="form-label"> LAST NAME</label>
+                    <input
+                      type="text"
+                      placeholder="last name"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="contact-info flex">
+                  <div class="email flex-col">
+                    <label class="form-label"> EMAIL </label>
+                    <input
+                      type="text"
+                      type="email"
+                      placeholder="email"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+
+                  <div class="phone flex-col">
+                    <label class="form-label"> PHONE NUMBER </label>
+                    <input
+                      type="number"
+                      placeholder="phone number"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="passwords-info flex">
+                  <div class="password flex-col">
+                    <label class="form-label"> PASSWORD </label>
+                    <input
+                      type="text"
+                      type="password"
+                      placeholder="password"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+
+                  <div class="confirm-password flex-col">
+                    <label class="form-label"> CONFIRM PASSWORD </label>
+                    <input
+                      type="text"
+                      type="password"
+                      placeholder="confirm-password"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="action">
+                <button class="action-btn">Create an account</button>
+                <p class="action-content">
+                  Already have an account? <a href="#">Log in</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

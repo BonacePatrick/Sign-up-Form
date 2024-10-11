@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("./fonts/Norse-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* utility classes */
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* form */
+.form-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.right-form-side {
+  width: 60%;
+}
+
+.intro-contents {
+  min-height: 30vh;
+  background-color: #f8fafa;
+  padding-left: 1.5rem;
+  padding-top: 6rem;
+}
+.intro-content {
+  font-size: 1.1rem;
+  font-weight: 600;
+  max-width: 30rem;
+}
+.intro-cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: black;
+}
+
+.left-img {
+  background-image: url("./aseets/pc-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 40%;
+}
+.logo-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #000000a2;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 10rem;
+  gap: 0.5rem;
+}
+.logo {
+  width: 18%;
+  height: 18%;
+}
+.logo-text {
+  font-family: "Norse-Bold", sans-serif !important;
+  font-size: 4rem;
+}
+
+.form-contents {
+  background-color: white;
+  min-height: 50vh;
+}
+.form-fields {
+  padding: 1.5rem;
+}
+.form-paragraph {
+  color: black;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.form-label {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  word-spacing: normal;
+}
+.form-control {
+  padding: 0.2rem;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+}
+.action {
+  background-color: #f8fafa;
+  min-height: 20vh;
+  padding: 1.5rem;
+}
+.action-btn {
+  background-color: #586d49;
+  color: white;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+.action-content {
+  font-size: 1rem;
+  color: black;
+  margin-top: 1rem;
+}
+input {
+  border: 1px solid black;
+}
+input:focus {
+  border-color: blue;
+  outline: none;
+}
+input:invalid {
+  border-color: red;
+}
+input:focus:invalid {
+  border-color: red;
+}
+input:invalid:required {
+  border-color: red;
+}
